@@ -9,7 +9,7 @@ public abstract class Participante implements Premiavel {
         this.nome = nome;
         this.valorBasePremio = valorBasePremio;
     }
-
+    public abstract void mostrarDetalhes();
 
     public abstract double calcularPremio();
 

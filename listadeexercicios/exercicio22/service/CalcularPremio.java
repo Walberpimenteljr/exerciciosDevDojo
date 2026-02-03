@@ -9,12 +9,6 @@ public class CalcularPremio {
         System.out.println("Nome: " + participante.getNome());
         System.out.println("Valor Base: " + participante.getValorBasePremio());
         System.out.println("Valor: " + participante.calcularPremio());
-        System.out.println("Tipo: " + participante.getClass().getSimpleName());
-        if (participante instanceof Jogador) {
-            System.out.println("Gols : " + ((Jogador) participante).getGolsMarcados());
-        }
-        if (participante instanceof Treinador) {
-            System.out.println("Titulos: " + ((Treinador) participante).getTitulos());
-        }
+        participante.mostrarDetalhes();
     }
 }

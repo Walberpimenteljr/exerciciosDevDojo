@@ -9,6 +9,12 @@ public class Treinador extends Participante {
     }
 
     @Override
+    public void mostrarDetalhes() {
+        System.out.println("Tipo: Treinador");
+        System.out.println("Titulos: " +  this.titulos);
+    }
+
+    @Override
     public double calcularPremio() {
         return valorBasePremio + (titulos * 1000);
     }

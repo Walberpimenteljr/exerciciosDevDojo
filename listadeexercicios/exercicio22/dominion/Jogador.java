@@ -10,6 +10,12 @@ public class Jogador extends Participante {
     }
 
     @Override
+    public void mostrarDetalhes() {
+        System.out.println("Tipo: Jogador");
+        System.out.println("Titulos: " +  this.golsMarcados);
+    }
+
+    @Override
     public double calcularPremio() {
         return valorBasePremio + (golsMarcados * 100);
     }
